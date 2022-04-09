@@ -1,0 +1,11 @@
+.autoComplete{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.materialTr:hover{
+    background-color: whitesmoke;
+}
+.sellMain{
+    margin-top: 10px;
+}
