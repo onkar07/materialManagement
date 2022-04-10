@@ -4,6 +4,14 @@ import showM from '../img/view.png'
 import addU from '../img/add-user.png'
 import findU from '../img/loupe.png'
 import './css/admin.css'
+
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
+  
 function Admin() {
   return (
     <div>
