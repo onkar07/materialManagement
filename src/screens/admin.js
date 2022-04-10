@@ -1,0 +1,52 @@
+import React from 'react'
+import addMI from '../img/shopping-cart.png'
+import showM from '../img/view.png'
+import addU from '../img/add-user.png'
+import findU from '../img/loupe.png'
+import './css/admin.css'
+function Admin() {
+  return (
+    <div>
+        <div className="col-12 cardGutter">
+            <div className="row">
+                <div className="col-6">
+                    <div class="card f1" >
+                        <img src={addMI} class="card-img-middle" alt="..." />
+                        <div class="card-body">
+                            <p class="card-text">मटेरियल भरा</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-6 ">
+                    <div class="card f2" >
+                        <img src={showM} class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-text">मटेरियल बघा</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-6 ">
+                    <div class="card f1" >
+                        <img src={addU} class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-text">नवीन खात उघडा</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-6">
+                    <div class="card f2" >
+                        <img src={findU} class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-text">खाते हुडका</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  )
+}
+
+export default Admin

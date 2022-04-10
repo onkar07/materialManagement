@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import axios from 'axios';
-import './sell.css'
+import './css/sell.css'
 
 function Sell() {
     const[ids, setIds] = useState([])
@@ -49,20 +49,6 @@ function Sell() {
         }
         console.log(body);
         axios.post(`http://localhost:3000/sell`,body).then(res=>{console.log("res",res)}).catch(err=>console.log("err",err));
-        // var xhr = new XMLHttpRequest();
-        // xhr.withCredentials = true;
-
-        // xhr.addEventListener("readystatechange", function () {
-        // if (this.readyState === 4) {
-        //     console.log(this.responseText);
-        // }
-        // });
-
-        // xhr.open("PATCH", "http://localhost:3000/sell");
-        // // xhr.setRequestHeader("content-type", "application/json");
-        // // xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
-        // // xhr.setRequestHeader("Access-Control-Allow-Credentials", true);
-        // xhr.send(body);
       };
 
       function getTable(){
