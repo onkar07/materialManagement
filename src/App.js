@@ -6,6 +6,7 @@ import AddMaterial from './screens/AddMaterial';
 import SearchMaterial from './screens/SearchMaterial';
 import AddUser from './screens/AddUser';
 import SearchUser from './screens/SearchUser';
+import Master from './screens/Master';
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,21 +16,29 @@ import {
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Admin />
+      <Navbar />      
       <Switch>
-          <Route path="/about">
-            <About />
+          <Route path="/admin">
+            <Admin />
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/addMaterial">
+            <AddMaterial />
           </Route>
-          <Route path="/">
-            <Home />
+          <Route path="/searchMaterial">
+            <SearchMaterial />
           </Route>
-      </Switch>
-    
+          <Route path="/addUser">
+            <AddUser />
+          </Route>
+          <Route path="/searchUser">
+            <SearchUser />
+          </Route>
+          <Route path="/sell">
+            <Sell />
+          </Route>
+        </Switch>
     </Router>
+   
   );
 }
 

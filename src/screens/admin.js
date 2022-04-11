@@ -4,12 +4,13 @@ import showM from '../img/view.png'
 import addU from '../img/add-user.png'
 import findU from '../img/loupe.png'
 import './css/admin.css'
-
+import AddMaterial from './AddMaterial'
 import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    Link,
+    Redirect
   } from "react-router-dom";
   
 function Admin() {
@@ -19,7 +20,7 @@ function Admin() {
             <div className="row">
                 <div className="col-6">
                     <div class="card f1" >
-                        <img src={addMI} class="card-img-middle" alt="..." />
+                        <a href="/addMaterial"><img src={addMI} class="card-img-middle" alt="..." /></a>
                         <div class="card-body">
                             <p class="card-text">मटेरियल भरा</p>
                         </div>
@@ -27,7 +28,7 @@ function Admin() {
                 </div>
                 <div className="col-6 ">
                     <div class="card f2" >
-                        <img src={showM} class="card-img-top" alt="..." />
+                        <a href="/searchMaterial"> <img src={showM} class="card-img-top" alt="..." /></a>
                         <div class="card-body">
                             <p class="card-text">मटेरियल बघा</p>
                         </div>
@@ -37,7 +38,7 @@ function Admin() {
             <div className="row">
                 <div className="col-6 ">
                     <div class="card f1" >
-                        <img src={addU} class="card-img-top" alt="..." />
+                        <a href="/addUser"><img src={addU} class="card-img-top" alt="..." /></a>
                         <div class="card-body">
                             <p class="card-text">नवीन खात उघडा</p>
                         </div>
@@ -45,7 +46,7 @@ function Admin() {
                 </div>
                 <div className="col-6">
                     <div class="card f2" >
-                        <img src={findU} class="card-img-top" alt="..." />
+                        <a href="/searchUser"><img src={findU} class="card-img-top" alt="..." /></a>
                         <div class="card-body">
                             <p class="card-text">खाते हुडका</p>
                         </div>
